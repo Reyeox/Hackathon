@@ -1,0 +1,90 @@
+section {
+    float: left;
+    width: 100%;
+}
+.register-section {
+    padding: 30px 0;
+    position: fixed;
+    top: 137px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 137px);
+    background-color: #fff;
+    z-index: 7; 
+    
+    .register-wrapper {
+        h1 {
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            color: #827f7f;
+            font-family: MontserratRegular;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+        .register-form {
+            border: 1px solid rgb(197, 195, 195);
+            border-radius: 3px;
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            max-width: 1920px;
+            margin: 0 auto;
+            .form-wrapper {
+                border-right: 1px solid rgb(197, 195, 195);
+            }
+            .register-form-panel {
+                flex-basis: 50%;
+                padding: 60px;
+            }
+            .register-input-wrapper {
+                float: left;
+                width: 100%;
+                margin-bottom: 20px;
+                input {
+                    border: 1px solid #b7b5b5;
+                    outline: none;
+                    padding: 10px;
+                    width: 100%;
+                    font-size:  18px;
+                    border-radius: 3px;
+                    box-shadow: 0px 4px 6px 1px rgba(114, 113, 113, 0.5);
+                    font-family: MontserratThin;
+                    &:-moz-placeholder {
+                        color: rgb(141, 140, 140);
+                        font-family: MontserratRegular;
+                    }
+                    &:-ms-input-placeholder {
+                        color: rgb(141, 140, 140);
+                        font-family: MontserratRegular;
+                    }
+                    &::-webkit-input-placeholder {
+                        color: rgb(141, 140, 140);
+                        font-family: MontserratRegular;
+                    }
+                    &::-moz-placeholder {
+                        color: rgb(141, 140, 140);
+                        font-family: MontserratRegular;
+                    }
+                }
+            }
+            .register-btn-wrapper {
+                float: left;
+                width: 100%;
+                margin-bottom: 40px;
+                button {
+                    border: 1px solid #b7b5b5;
+                    outline: none;
+                    padding: 10px;
+                    width: 100%;
+                    font-size:  18px;
+                    border-radius: 3px;
+                    box-shadow: 0px 4px 6px 1px rgba(114, 113, 113, 0.5);
+                    font-family: MontserratRegular;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hackathon-items.component.css']
 })
 export class HackathonItemsComponent implements OnInit {
-  @Input('collectionTitle') collectionTitle: string;
+  @Input('collectionObject') collectionObject = [];
   constructor() { }
 
   ngOnInit() {

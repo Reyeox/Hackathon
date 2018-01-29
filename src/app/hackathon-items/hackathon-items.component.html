@@ -4,33 +4,12 @@
           {{collectionTitle}}
       </h1>
       <div class="row box-wrapper">
-          <div class="box-item">
+          <div class="box-item" *ngFor = "let box of collectionObject">
               <span class="item-img-container"></span>
-              <span class="item-title">Lady Problems Hackathon: London</span>
-              <span class="item-location">London, UK</span>
-              <span class="item-date">11/09/17 - 11/10/17</span>
-              <span class="item-participants">100 Joined</span>
-          </div>
-          <div class="box-item">
-              <span class="item-img-container"></span>
-              <span class="item-title">Women In Tech Demo Day Presented by Capital One</span>
-              <span class="item-location">New York, NY, USA</span>
-              <span class="item-date">11/15/17 - 11/17/17</span>
-              <span class="item-participants">51 Joined</span>
-          </div>
-          <div class="box-item">
-              <span class="item-img-container"></span>
-              <span class="item-title">AngelHack Global Series: Los Angeles</span>
-              <span class="item-location">Los Angeles, CA, USA</span>
-              <span class="item-date">3/20/2018 - 3/22/2018</span>
-              <span class="item-participants">88 Joined</span>
-          </div>
-          <div class="box-item">
-              <span class="item-img-container"></span>
-              <span class="item-title">SmartTone Smart Properties Hackathon</span>
-              <span class="item-location">Hong Kong, China</span>
-              <span class="item-date">11/09/17 - 11/10/17</span>
-              <span class="item-participants">14 Joined</span>
+              <span class="item-title">{{box.title}}</span>
+              <span class="item-location">{{box.location}}</span>
+              <span class="item-date">{{box.date}}</span>
+              <span class="item-participants">{{box.participants}}</span>
           </div>
       </div>
   </div>

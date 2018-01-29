@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Lady Problems Hackathon: London",
+        "location": "London, UK",
+        "date": "11/09/17 - 11/10/17",
+        "participants": 100
+    },
+    {
+        "title": "Women In Tech Demo Day Presented by Capital One",
+        "location": "New York, NY, USA",
+        "date": "11/15/17 - 11/17/17",
+        "participants": 51
+    },
+    {
+        "title": "AngelHack Global Series: Los Angeles",
+        "location": "Los Angeles, CA, USA",
+        "date": "3/20/2018 - 3/22/2018",
+        "participants": 88
+    },
+    {
+        "title": "SmartTone Smart Properties Hackathon",
+        "location": "Hong Kong, China",
+        "date": "11/09/17 - 11/10/17",
+        "participants": 14
+    }
+]
