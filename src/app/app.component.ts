@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  register = false;
+
+  openRegister(event){
+    var body = document.getElementsByTagName('body')[0];
+    this.register = event;
+    if(this.register = true) {
+      body.setAttribute('class', 'register-open');
+    }
+  }
 }

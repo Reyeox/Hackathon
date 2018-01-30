@@ -1,0 +1,198 @@
+section {
+  float: left;
+  width: 100%;
+}
+
+.register-section {
+  padding: 30px 0;
+  position: fixed;
+  top: 137px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 137px);
+  background-color: #fff;
+  z-index: 7;
+}
+
+.register-section .register-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.register-section .register-wrapper h1 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: #827f7f;
+  font-family: MontserratRegular;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.register-section .register-wrapper .register-form {
+  border: 1px solid #c5c3c3;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.register-section .register-wrapper .register-form .form-wrapper {
+  border-right: 1px solid #c5c3c3;
+}
+
+.register-section .register-wrapper .register-form .register-form-panel {
+  flex-basis: 50%;
+  padding: 60px;
+}
+
+.register-section .register-wrapper .register-form .register-advice {
+  font-size: 17px;
+  width: 100%;
+  float: left;
+}
+
+.register-section .register-wrapper .register-form .register-advice a {
+  text-decoration: none;
+  color: #468ee5;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper.last {
+  margin-bottom: 40px;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input {
+  border: 1px solid #b7b5b5;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-family: MontserratThin;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input:-moz-placeholder {
+  color: #8d8c8c;
+  font-family: MontserratRegular;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input:-ms-input-placeholder {
+  color: #8d8c8c;
+  font-family: MontserratRegular;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input::-webkit-input-placeholder {
+  color: #8d8c8c;
+  font-family: MontserratRegular;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input::-moz-placeholder {
+  color: #8d8c8c;
+  font-family: MontserratRegular;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper input:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.register-section .register-wrapper .register-form .register-btn-wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.register-section .register-wrapper .register-form .register-btn-wrapper button {
+  border: 1px solid #b7b5b5;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-family: MontserratRegular;
+  background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  line-height: 1;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.register-section .register-wrapper .register-form .register-btn-wrapper button:hover {
+  background-color: #ff5959;
+  border: 1px solid #ff5959;
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.register-section .register-wrapper .social-sign-up {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn {
+  border-radius: 3px;
+  padding: 20px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  align-items: center;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.github {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.github .fa {
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.google {
+  border-color: #343d46;
+  background-color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.google .fa {
+  color: #4285f4;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.facebook {
+  border-color: #507cc0;
+  background-color: #507cc0;
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.facebook .fa {
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn .fa {
+  font-size: 40px;
+  line-height: 0;
+  margin-right: 20px;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
