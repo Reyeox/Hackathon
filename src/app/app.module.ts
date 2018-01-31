@@ -8,6 +8,8 @@ import { FullHeightBlockComponent } from './full-height-block/full-height-block.
 import { HackathonItemsComponent } from './hackathon-items/hackathon-items.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+import { BannerBlockComponent } from './banner-block/banner-block.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { RegisterComponent } from './register/register.component';
     FullHeightBlockComponent,
     HackathonItemsComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    BannerBlockComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
