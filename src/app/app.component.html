@@ -1,3 +1,3 @@
-<app-header></app-header>
-<app-register></app-register>
+<app-header (registerEvent)="openRegister($event)"></app-header>
+<app-register *ngIf="register"></app-register>
 <router-outlet></router-outlet>

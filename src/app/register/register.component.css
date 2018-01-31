@@ -14,6 +14,14 @@ section {
   z-index: 7;
 }
 
+.register-section .register-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
 .register-section .register-wrapper h1 {
   float: left;
   width: 100%;
@@ -44,10 +52,25 @@ section {
   padding: 60px;
 }
 
+.register-section .register-wrapper .register-form .register-advice {
+  font-size: 17px;
+  width: 100%;
+  float: left;
+}
+
+.register-section .register-wrapper .register-form .register-advice a {
+  text-decoration: none;
+  color: #468ee5;
+}
+
 .register-section .register-wrapper .register-form .register-input-wrapper {
   float: left;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.register-section .register-wrapper .register-form .register-input-wrapper.last {
+  margin-bottom: 40px;
 }
 
 .register-section .register-wrapper .register-form .register-input-wrapper input {
@@ -57,8 +80,9 @@ section {
   width: 100%;
   font-size: 18px;
   border-radius: 3px;
-  box-shadow: 0px 4px 6px 1px rgba(114, 113, 113, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   font-family: MontserratThin;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .register-section .register-wrapper .register-form .register-input-wrapper input:-moz-placeholder {
@@ -81,6 +105,10 @@ section {
   font-family: MontserratRegular;
 }
 
+.register-section .register-wrapper .register-form .register-input-wrapper input:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .register-section .register-wrapper .register-form .register-btn-wrapper {
   float: left;
   width: 100%;
@@ -94,7 +122,77 @@ section {
   width: 100%;
   font-size: 18px;
   border-radius: 3px;
-  box-shadow: 0px 4px 6px 1px rgba(114, 113, 113, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   font-family: MontserratRegular;
   background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  line-height: 1;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.register-section .register-wrapper .register-form .register-btn-wrapper button:hover {
+  background-color: #ff5959;
+  border: 1px solid #ff5959;
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.register-section .register-wrapper .social-sign-up {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn {
+  border-radius: 3px;
+  padding: 20px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  align-items: center;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.github {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.github .fa {
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.google {
+  border-color: #343d46;
+  background-color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.google .fa {
+  color: #4285f4;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.facebook {
+  border-color: #507cc0;
+  background-color: #507cc0;
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn.facebook .fa {
+  color: #fff;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn .fa {
+  font-size: 40px;
+  line-height: 0;
+  margin-right: 20px;
+}
+
+.register-section .register-wrapper .social-sign-up .social-btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
