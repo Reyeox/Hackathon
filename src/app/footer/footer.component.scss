@@ -1,3 +1,5 @@
+$min: 15px;
+$max: 150px;
 :host {
     float: left;
     width: 100%;
@@ -11,50 +13,201 @@ nav {
     width: 100%;
 }
 .footer-rows-wrapper {
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     padding: 0 60px;
+    text-align: -webkit-center;
     .footer-rows {
-        flex-basis: 25%;
+        flex-basis: 28%;
+        position:relative;
+        float:left;
+        margin:0;
+        width: 33.33333%;
+        /* 961 px stop*/
         &.button-row {
             display: flex;
             align-items: center;
             justify-content: center;
+
             button {
-                border: none;
-                padding: 20px;
-                font-size: 26px;
-                font-family: MontserratRegular; 
+                border: 1px solid rgba(0,0,0,0.4);
+                padding: 20px 75px 20px 20px;
+                font-size: 20px;
+                font-family: MontserratRegular;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
                 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
                 background-color: #fff;
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 }
+                @media only screen and (max-width: 961px) {
+                  font-size: 14px;
+                  padding:18px 35px 18px 35px;
+                  margin-bottom: 20px;
+                }
             }
         }
+        .footer-links {
+            width: 66.666%;
+            line-height: 0.8;
+            li {
+              text-align:left;
+              padding-bottom:10px;
+              margin-top:5px;
+            }
+
+        }
     }
-    ul {
-        font-family: MontserratMedium;
-        h2 {
+      ul {
+          font-family: MontserratMedium;
+          h2 {
             color: #4b4b4b;
             font-family: MontserratMedium;
             font-weight: bold;
-            font-size: 30px;
-        }
-        li {
-            margin-bottom: 10px;
             font-size: 26px;
+          }
+          li {
+            margin-left: -25px;
+            margin-right: -25px;
+            margin-bottom: 10px;
+            font-size: 22px;
             color: #4b4b4b;
             &:last-child {
                 margin-bottom: 0;
             }
+            @media only screen and (max-width: 961px) {
+              font-size:10px;
+            }
         }
     }
+    @media only screen and (min-width: 962px){
+      .footer-links {
+          width: 66.666%;
+          line-height: 0.6;
+          li {
+            text-align:left;
+            padding-bottom:10px;
+            margin-top:5px;
+            font-size: 18px;
+          }
+          .marG {
+            margin-bottom:50px;
+            margin-left:$min;
+            margin-right:$min;
+        }
+
+      }
+    }
+    @media only screen and (max-width: 961px){
+      display:grid;
+      text-align: -webkit-center;
+      .footer-links {
+          display: inline-table;
+          h2 {
+            margin-top:20px;
+            font-size:25px;
+            text-align: center;
+            text-decoration: none;
+            }
+          li {
+            font-size:15px;
+
+            text-align: center !important;
+            }
+          }
+      .footer-rows{
+        display:inline-table;
+      }
+        u {
+            a {
+                margin-top:10px;
+              }
+          }
+      .marG {
+        margin-bottom:50px;
+        margin-left:$min;
+        margin-right:$min;
+      }
+    }
+
 }
+
 .footer-mini {
     float: left;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    h2 {
+      font-size:15px;
+      display: inline-block;
+      margin-top:10px;
+      @media only screen and (min-width: 550px){
+        h2 {
+
+          font-size: 15px;
+          display: inline-block;
+        }
+      }
+      @media only screen and (max-width: 400px){
+        h2{
+          font-size: 14px;
+          margin-top: 5px;
+        }
+        .marG {
+          margin-bottom:50px;
+          margin-left:$min;
+          margin-right:$min;
+        }
+        }
+      }
+    }
+
+/* Otros elementos */
+hr {
+  width: 95%;
+    border-bottom: 1px solid #000;
+    @media only screen and (max-width: 510px){
+      hr {
+        width: 250%;
+        border-bottom: 1px solid #000;
+      }
+    }
+}
+/* Margen en firma de copyright y social media */
+.marG {
+    margin-bottom: 100px;
+    margin-left: $max;
+    margin-right: $max;
+    @media only screen and (max-width:910px)
+    {
+      margin-bottom:50px;
+      margin-left:$min;
+      margin-right:$min;
+    }
+
+}
+.social {
+  h2 {
+    font-size: 15px;
+    display: inline-block;
+    @media only screen and (max-width: 510px){
+      h2 {
+        font-size:15px;
+        display: inline-block;
+      }
+    }
+  }
+  .links {
+    color:#000;
+    text-decoration: none;
+  }
+}
+.nope{
+  display:none;
+}
+.links {
+  color:#000;
+  text-decoration: none;
+  margin-top:20px;
 }
